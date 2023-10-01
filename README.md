@@ -1,5 +1,9 @@
 # DiscordMessagesReader
 read messages and id from a especific channel in a givem channel id and message count.
+
+
+## It consume the discord api with HTTP so it dont have depencencies.
+
 # EXAMPLE
 
 
