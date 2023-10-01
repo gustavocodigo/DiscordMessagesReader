@@ -73,4 +73,4 @@ It will be interesting if you use a sleep between each request to avoid ban or b
 if you add an request of about 1000ms delay it will be safe.
 
 
-# SelfBots goes agains discord rules so use it at your own risk.
+# SelfBots goes against discord TOS so use it at your own risk.
