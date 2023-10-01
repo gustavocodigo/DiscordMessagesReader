@@ -59,7 +59,6 @@ Now you have 150 messages.
 
 
 
-```
 
 
 ## Running
@@ -68,3 +67,10 @@ you can run the example wth node:
 ```
 node index.js
 ```
+
+# Waning !!
+It will be interesting if you use a sleep between each request to avoid ban or block ip by request ip:
+if you add an request of about 1000ms delay it will be safe.
+
+
+# SelfBots goes agains discord rules so use it at your own risk.
