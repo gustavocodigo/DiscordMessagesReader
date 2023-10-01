@@ -5,10 +5,10 @@ class DiscordMessagesReader {
         }
     }
 
-    async read_from_channel(channel_id, count) {
-        let params = ""
+    async read_from_channel(channel_id, before = 0) {
+        
         try {
-            let data = await fetch(`https://discord.com/api/v9/channels/${channel_id}/messages${params}`, {
+            let data = await fetch(`https://discord.com/api/v9/channels/${channel_id}/messages?before${before}`, {
                 headers: this.headers
             })
             let body = await data.json()
@@ -20,10 +20,10 @@ class DiscordMessagesReader {
 }
 
 
-const reader = new DiscordMessagesReader(TOKEN)
+const deleter = new DiscordMessagesReader(TOKEN, 0)
 
-let messages = reader.read_from_channel("884446033558503466", 50).then((messages) => {
-    console.log(messages) //outputs a json
+let messages = deleter.read_from_channel("973128434303782912", 0).then((messages) => {
+    console.log(messages)
 }).catch( e => {
     console.log(e)
 })
