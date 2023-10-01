@@ -68,7 +68,7 @@ you can run the example wth node:
 node index.js
 ```
 
-# Waning !!
+# Warning !!
 It will be interesting if you use a sleep between each request to avoid ban or block ip by request ip:
 if you add an request of about 1000ms delay it will be safe.
 
