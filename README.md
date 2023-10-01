@@ -60,3 +60,11 @@ Now you have 150 messages.
 
 
 ```
+
+
+## Running
+
+you can run the example wth node:
+```
+node index.js
+```
