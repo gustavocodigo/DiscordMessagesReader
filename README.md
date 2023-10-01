@@ -2,7 +2,7 @@
 read messages and id from a especific channel in a givem channel id and message count.
 
 
-## It consume the discord api with HTTP so it dont need depencencies.
+## It consume the discord api with HTTP so it dont need additional dependencies.
 
 it uses the fetch to make the request.
 
