@@ -1,3 +1,4 @@
+
 class DiscordMessagesReader {
     constructor(token) {
         this.headers = {
@@ -25,14 +26,11 @@ class DiscordMessagesReader {
                 method: "DELETE",
                 headers: this.headers
             })
-            let body = await data.json()
-            return body
         } catch (e) {
             throw (e)
         }
     }
 }
-
 
 
 
