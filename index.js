@@ -17,7 +17,23 @@ class DiscordMessagesReader {
             throw (e)
         }
     }
+
+    async delete_message(channel_id, message_id) {
+        try {
+
+            let data = await fetch(`https://discord.com/api/v9/channels/${channel_id}/messages/${message_id}`, {
+                method: "DELETE",
+                headers: this.headers
+            })
+            let body = await data.json()
+            return body
+        } catch (e) {
+            throw (e)
+        }
+    }
 }
+
+
 
 
 const deleter = new DiscordMessagesReader(TOKEN, 0)
