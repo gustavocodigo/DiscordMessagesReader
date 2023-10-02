@@ -7,9 +7,9 @@ class DiscordMessagesReader {
     }
 
     async read_from_channel(channel_id, before = 0) {
-        
+        let params = (before > 0) ? `?before=${before}` : ""
         try {
-            let data = await fetch(`https://discord.com/api/v9/channels/${channel_id}/messages?before${before}`, {
+            let data = await fetch(`https://discord.com/api/v9/channels/${channel_id}/messages${params}`, {
                 headers: this.headers
             })
             let body = await data.json()
@@ -31,6 +31,8 @@ class DiscordMessagesReader {
         }
     }
 }
+
+
 
 
 
