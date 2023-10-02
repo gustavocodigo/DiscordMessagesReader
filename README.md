@@ -49,9 +49,9 @@ To get previous messages last you can pass the offset param in the `before`
 
  reader.read_from_channel("1158181887802605621", 0) // last 50 messages
  
- reader.read_from_channel("1158181887802605621", 50) // more 50 previous messages
+ reader.read_from_channel("1158181887802605621", 3891392388238913) // more 50 previous messages
  
- reader.read_from_channel("1158181887802605621", 100) // more 50 previous messages
+ reader.read_from_channel("1158181887802605621", 48913923388238913) // more 50 previous messages
  
 Now you have 150 messages.
 
